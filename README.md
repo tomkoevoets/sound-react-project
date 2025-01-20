@@ -98,11 +98,13 @@ Anim8 is all about merging **creativity** and **technology**, offering users a v
 
 ## ⚙️ **How It Works**
 
-1. **Interaction Prompt**: Users must press the screen to enable audio permissions.
-2. **Sound Detection**:  
+1. **download the application**: You can fork the repo and run it on VsCode with the go live option.
+  
+2. **Interaction Prompt**: Users must press the screen to enable audio permissions.
+3. **Sound Detection**:  
    - **Clapping** triggers the start of animations.  
    - **Whistling** adjusts the animation speed dynamically.  
-3. **Visual Effects**: The animations feature custom particles and overlays for a mesmerizing display.
+4. **Visual Effects**: The animations feature custom particles and overlays for a mesmerizing display.
 
 
 

@@ -17,7 +17,7 @@ html{
     height: 100vh;
     background-color: #444;
 }
-.overlay--hidden{
+.overlay-hidden{
     opacity: 0;
     pointer-events: none;
 }

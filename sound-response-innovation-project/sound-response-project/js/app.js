@@ -109,6 +109,6 @@ function draw(){
 // are activated. This prevents errors.
 let overlayEl = document.querySelector('.overlay');
 overlayEl.addEventListener('mouseup', (e) => {
-    overlayEl.classList.add('overlay--hidden');
+    overlayEl.classList.add('overlay-hidden');
     data.startInput();
 });

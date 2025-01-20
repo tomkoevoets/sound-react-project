@@ -9,14 +9,12 @@ let col4;
 
 let particles = [];
 let maxDistance = 100;
-let crack;
 let mask = [];
 let loopCount = 0;
 let nFrames = 12000;
 
 function preload(){
     document.body.style.overflow = 'hidden';
-    crack = loadImage('assets/crack.png');
     for(i = 0; i < 251; i++) {
         mask[i] = loadImage('assets/Mask_002_00' + i + '.png');
     }

@@ -50,6 +50,17 @@ function draw(){
     // rgb(248, 243, 212)
     // rgb(246, 65, 108)
     // rgb(255, 222, 125)
+    // rgb(255, 154, 0)
+    // rgb(24, 111, 101)
+    // rgb(181, 203, 153)
+    // rgb(178, 83, 62)
+    // rgb(252, 224, 155)
+
+    // rgb(0, 26, 110)
+    // rgb(7, 71, 153)
+    // rgb(0, 153, 144)
+    // rgb(225, 255, 187)
+
 
     if(vol >= .25){
         // Red colors for loud volume
@@ -60,10 +71,10 @@ function draw(){
     }
     else {
         // HyperCulture style colors for normal volume
-        col1 = color(0, 184, 169);
-        col2 = color(248, 243, 212);
-        col3 = color(246, 65, 108);
-        col4 = color(255, 222, 125);
+        col1 = color(0, 26, 110);
+        col2 = color(7, 71, 153);
+        col3 = color(0, 153, 144);
+        col4 = color(225, 255, 187);
     }
 
     push();

@@ -98,26 +98,26 @@ function drawRectangle(color, x, y, size1, size2, scale1, scale2){
 }
 
 
-// function drawStar(color, x, y, size, scale1, scale2) {
-//     push();
-//     translate(x, y);
-//     scale(random(scale1, scale2));
-//     stroke(color);
-//     noFill();
-//     beginShape();
-//     for (let i = 0; i < 5; i++) {
-//         let angle = TWO_PI / 5 * i;
-//         let sx = cos(angle) * size;
-//         let sy = sin(angle) * size;
-//         vertex(sx, sy);
-//         angle += TWO_PI / 10;
-//         sx = cos(angle) * size / 2;
-//         sy = sin(angle) * size / 2;
-//         vertex(sx, sy);
-//     }
-//     endShape(CLOSE);
-//     pop();
-// }
+function drawStar(color, x, y, size, scale1, scale2) {
+    push();
+    translate(x, y);
+    scale(random(scale1, scale2));
+    stroke(color);
+    noFill();
+    beginShape();
+    for (let i = 0; i < 5; i++) {
+        let angle = TWO_PI / 5 * i;
+        let sx = cos(angle) * size;
+        let sy = sin(angle) * size;
+        vertex(sx, sy);
+        angle += TWO_PI / 10;
+        sx = cos(angle) * size / 2;
+        sy = sin(angle) * size / 2;
+        vertex(sx, sy);
+    }
+    endShape(CLOSE);
+    pop();
+}
 
 // function drawTriangle(color, x, y, size, scale1, scale2) {
 //     push();

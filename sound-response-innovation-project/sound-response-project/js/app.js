@@ -46,6 +46,11 @@ function draw(){
     // Map frequency for particle acceleration
     let frequency = map(freq, 100, 2000, 1, 20);
 
+    // rgb(0, 184, 169)
+    // rgb(248, 243, 212)
+    // rgb(246, 65, 108)
+    // rgb(255, 222, 125)
+
     if(vol >= .25){
         // Red colors for loud volume
         col1 = color(255, 0, 0);
@@ -55,10 +60,10 @@ function draw(){
     }
     else {
         // HyperCulture style colors for normal volume
-        col1 = color(0, 128, 201);
-        col2 = color(194, 237, 46);
-        col3 = color(69, 69, 158);
-        col4 = color(138, 135, 235);
+        col1 = color(0, 184, 169);
+        col2 = color(248, 243, 212);
+        col3 = color(246, 65, 108);
+        col4 = color(255, 222, 125);
     }
 
     push();
@@ -69,7 +74,7 @@ function draw(){
     translate(x, y);
 
     // Spawn new particles when noise is detected
-    if(vol > .09){
+    if(vol > .02){
         for(var i = 0; i < 3; i++){
             if(particles.length < 100){
                 var p = new Particle(volume);

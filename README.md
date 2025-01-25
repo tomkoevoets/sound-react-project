@@ -81,19 +81,11 @@ Anim8 is all about merging **creativity** and **technology**, offering users a v
 
 | Color                  | Hex                                                                |
 | ---------------------- | ------------------------------------------------------------------ |
-| Main Theme Dark Blue   | ![#2E3047](https://via.placeholder.com/10/2E3047?text=+) `#2E3047` |
-| Main Theme Red         | ![#B94D4D](https://via.placeholder.com/10/B94D4D/000000?text=+) `#B94D4D` |
-| White Light            | ![#F5F5F5](https://via.placeholder.com/10/F5F5F5/000000?text=+) `#F5F5F5` |
-| Neon Yellow            | ![#FAE502](https://via.placeholder.com/10/FAE502/000000?text=+) `#FAE502` |
-| Solid Black            | ![#000000](https://via.placeholder.com/10/000000/FFFFFF?text=+) `#000000` |
-| Black Light            | ![#363636](https://via.placeholder.com/10/363636?text=+) `#363636`   |
-| Black Dark             | ![#1b1b1b](https://via.placeholder.com/10/1b1b1b?text=+) `#1b1b1b`   |
-| Solid White            | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF/000000?text=+) `#FFFFFF` |
-| White Dark             | ![#c2c2c2](https://via.placeholder.com/10/c2c2c2?text=+) `#c2c2c2`   |
-| White Darker           | ![#989898](https://via.placeholder.com/10/878686?text=+) `#989898`   |
-| Neon Pink              | ![#F92B74](https://via.placeholder.com/10/F92B74/FFFFFF?text=+) `#F92B74` |
-| Neon Purple            | ![#D9B0FF](https://via.placeholder.com/10/D9B0FF/000000?text=+) `#D9B0FF` |
-| Calm Blue              | ![#E8F6FF](https://via.placeholder.com/10/E8F6FF/000000?text=+) `#E8F6FF` |
+| background   | ![#2E3047](https://via.placeholder.com/10/2E3047?text=+) `#2E3047` |
+| shape col 1         | ![#001A6E](https://via.placeholder.com/10/B94D4D/000000?text=+) `#001A6E` |
+| shape col 2            | ![#074799](https://via.placeholder.com/10/F5F5F5/000000?text=+) `#074799` |
+| shape col 3            | ![#009990](https://via.placeholder.com/10/FAE502/000000?text=+) `#009990` |
+| shape col 4            | ![#E1FFBB](https://via.placeholder.com/10/000000/FFFFFF?text=+) `#E1FFBB` |
 
 
 ## ⚙️ **How It Works**

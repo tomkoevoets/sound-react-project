@@ -91,7 +91,7 @@ function draw(){
     translate(x, y);
 
     // Spawn new particles when noise is detected
-    if(vol > .02){
+    if(vol > .04){
         for(var i = 0; i < 3; i++){
             if(particles.length < 100){
                 var p = new Particle(volume);
@@ -110,8 +110,8 @@ function draw(){
         }
     }  
 
-    // Randomly spawn a particle every 30 seconds if no noise is detected
-    if(particles.length == 0 && second() % 30 == 0){
+    // Randomly spawn a particle every 8 seconds if no noise is detected
+    if(particles.length == 0 && second() % 8 == 0){
         var p = new Particle(8);
         particles.push(p);
     }

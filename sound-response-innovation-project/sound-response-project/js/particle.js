@@ -47,7 +47,7 @@ class Particle{
     // Display particles based on shape type
     show() {
         if(this.num == 1) {
-            drawStar(this.color, this.pos.x, this.pos.y, 10, 2.5, this.scale1, this.scale2);
+            drawCircle(this.color, this.pos.x, this.pos.y, 10, 2.5, this.scale1, this.scale2);
         }
         else if(this.num == 2) {
             drawCross(this.color, this.pos.x, this.pos.y, 7.5, this.scale1, this.scale2);

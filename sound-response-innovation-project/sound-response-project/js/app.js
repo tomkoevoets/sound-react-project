@@ -10,9 +10,10 @@ let col4;
 let particles = [];
 let maxDistance = 100;
 let mask = [];
-let loopCount = 0;
+let loopCount = 0; // Loop through mask images
 let nFrames = 12000;
 
+// Preload mask images
 function preload(){
     document.body.style.overflow = 'hidden';
     for(i = 0; i < 251; i++) {
@@ -20,22 +21,24 @@ function preload(){
     }
 }
 
+// Setup function
 function setup(){
     data = new Data();
    
-    rectMode(CENTER);
-    imageMode(CORNER); 
-    createCanvas(windowW - 1, windowH - 1);
+    rectMode(CENTER); // spawn particles in the center of the screen
+    imageMode(CORNER); // set the mask image to the corner of the screen
+    createCanvas(windowW - 1, windowH - 1); // create canvas with window width and height
 
     // Wait for an interaction with the page before requesting the Audio Context to avoid errors
     getAudioContext().suspend();
 }
 
+// Draw function to display particles
 function draw(){
     data.update();
     
-    background(244, 227, 226, 10);
-    let timing = (frameCount) / nFrames;
+    background(178, 83, 62, 30);
+    let timing = (frameCount) / nFrames; 
     
     let vol = data.output.sounds.volume;
     let freq = data.output.sounds.frequency;
@@ -50,6 +53,7 @@ function draw(){
     // rgb(248, 243, 212)
     // rgb(246, 65, 108)
     // rgb(255, 222, 125)
+
     // rgb(255, 154, 0)
     // rgb(24, 111, 101)
     // rgb(181, 203, 153)
@@ -62,7 +66,8 @@ function draw(){
     // rgb(225, 255, 187)
 
 
-    if(vol >= .25){
+    // Set colors based on volume
+    if(vol >= .15){
         // Red colors for loud volume
         col1 = color(255, 0, 0);
         col2 = color(227, 11, 92);
@@ -70,13 +75,14 @@ function draw(){
         col4 = color(233, 30, 70);
     }
     else {
-        // HyperCulture style colors for normal volume
+        // my colors for normal volume aqua style
         col1 = color(0, 26, 110);
         col2 = color(7, 71, 153);
         col3 = color(0, 153, 144);
         col4 = color(225, 255, 187);
     }
 
+    // Draw particles using p5.js push and pop functions
     push();
     // Rotate screen center
     translate(windowW / 2, windowH / 2);
@@ -94,7 +100,7 @@ function draw(){
         }
     }
 
-    // Display and move all existing particles
+    // Display and move all existing particles using volume and frequency
     for(var i = particles.length - 1; i >= 0; i--) {
         if(!particles[i].edges()) {
             particles[i].update(frequency);
@@ -109,7 +115,7 @@ function draw(){
         var p = new Particle(8);
         particles.push(p);
     }
-    pop();
+    pop(); // use pop to reset the transformation matrix
 
     // Loop through mask images
     image(mask[loopCount], 0, 0, windowW, windowH);

@@ -1,3 +1,4 @@
+// Data class for handling input and output data
 class Data {
     constructor() {
         this.output = new Output();
@@ -6,11 +7,12 @@ class Data {
     }
     startInput() {
         userStartAudio();
-        this.input.mic = new p5.AudioIn();
+        this.input.mic = new p5.AudioIn(); // Create an Audio input
         this.input.mic.start( () => {
-            this.analysis.pitchDetector = ml5.pitchDetection('models/pitchmodel', getAudioContext(), this.input.mic.stream, () => { this.analysis.loaded = true; });
+            this.analysis.pitchDetector = ml5.pitchDetection('models/pitchmodel', getAudioContext(), this.input.mic.stream, () => { this.analysis.loaded = true; }); // Create a pitch detector using the Audio input
         });
     }
+    // Update function to get the volume and frequency from the input 
     update() {
         if(this.analysis.loaded){
             this.analysis.pitchDetector.getPitch((err, frequency) => {
@@ -25,6 +27,7 @@ class Data {
     }
 }
 
+// Analysis class for handling the analysis of the input data
 class Analysis {
     constructor(){
         this.pitchDetector = null;
@@ -39,12 +42,14 @@ class Analysis {
     }
 }
 
+// Input class for handling the microphone input 
 class Input {
     constructor(){
         this.mic = null;
     }
 }
 
+// Output class for handling the output data
 class Output {
     constructor(){
         this.sounds = {

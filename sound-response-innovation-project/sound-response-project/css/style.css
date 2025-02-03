@@ -74,7 +74,7 @@ html{
 }
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 38%; }
+  to { width: 38%; } /* adjust this width to the width of the screen you use, it differs per screen  */
 }
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }

@@ -49,23 +49,6 @@ function draw(){
     // Map frequency for particle acceleration
     let frequency = map(freq, 100, 2000, 1, 20);
 
-    // rgb(0, 184, 169)
-    // rgb(248, 243, 212)
-    // rgb(246, 65, 108)
-    // rgb(255, 222, 125)
-
-    // rgb(255, 154, 0)
-    // rgb(24, 111, 101)
-    // rgb(181, 203, 153)
-    // rgb(178, 83, 62)
-    // rgb(252, 224, 155)
-
-    // rgb(0, 26, 110)
-    // rgb(7, 71, 153)
-    // rgb(0, 153, 144)
-    // rgb(225, 255, 187)
-
-
     // Set colors based on volume
     if(vol >= .15){
         // Red colors for loud volume

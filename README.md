@@ -79,13 +79,13 @@ Anim8 is all about merging **creativity** and **technology**, offering users a v
 <!-- Color Reference -->
 ### :art: Color Reference
 
-| Color                  | Hex                                                                |
-| ---------------------- | ------------------------------------------------------------------ |
-| background   | ![#2E3047](https://via.placeholder.com/10/2E3047?text=+) `#2E3047` |
-| shape col 1         | ![#001A6E](https://via.placeholder.com/10/B94D4D/000000?text=+) `#001A6E` |
-| shape col 2            | ![#074799](https://via.placeholder.com/10/F5F5F5/000000?text=+) `#074799` |
-| shape col 3            | ![#009990](https://via.placeholder.com/10/FAE502/000000?text=+) `#009990` |
-| shape col 4            | ![#E1FFBB](https://via.placeholder.com/10/000000/FFFFFF?text=+) `#E1FFBB` |
+| Name         | Preview                                                       | Hex Code   |
+|--------------|---------------------------------------------------------------|------------|
+| Background   | <img src="https://singlecolorimage.com/get/2E3047/15x15" />   | `#2E3047`  |
+| Shape Col 1  | <img src="https://singlecolorimage.com/get/001A6E/15x15" />   | `#001A6E`  |
+| Shape Col 2  | <img src="https://singlecolorimage.com/get/074799/15x15" />   | `#074799`  |
+| Shape Col 3  | <img src="https://singlecolorimage.com/get/009990/15x15" />   | `#009990`  |
+| Shape Col 4  | <img src="https://singlecolorimage.com/get/E1FFBB/15x15" />   | `#E1FFBB`  |
 
 
 ## ⚙️ **How It Works**
